@@ -1,0 +1,24 @@
+representational state transfer
+we are using text to transfer states of information (usually object)
+there are a set of standards of rest:
+
+indentification of resources - resources are all indentified by a unique URI (unique resource identifier)
+/users/User123 returns the state of User123 in some intelligible format
+REST uses either XML or JSON format
+
+manipulation of resources through representation - REST can also be used to manipulate resources through solely text
+eg we can POST, PUT, PATCH, DELETE resources using solely text
+
+self-descriptive messages - everything about a request can be known from the request
+
+hypermedia as the engine of application state (our whole application is manages through text based messages sent by HTTP)
+
+information is stateless - information about the client-side is not stored on the servers side (although the opposite,
+ie caching data on the client side is permitted)
+
+
+
+this stuff is important for transfering data from backend to frontend, but it's used for so much more-
+nowadays multiple backends can communicate with each other as separate services
+(this is still very fast because we're all using cloud services now - there's really very little slowdown to separating
+our application like this)
